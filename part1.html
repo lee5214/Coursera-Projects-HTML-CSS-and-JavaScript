@@ -2,13 +2,12 @@
 <head>
 </head>
 <body>
-	<h1>Please Enter Your Details For Our Dating Website!</h1>
+	<h2>Please Enter Your Details For Our Dating Website!</h2>
 	<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" enctype="multipart/form-data">
-
 		<fieldset>
 			<legend>Your Face</legend>
 			    <label for="avatar">Your image:</label>
-			        <input type="file" id="avatar" name="avatar" required> <br />
+			        <input type="file" id="avatar" name="avatar" required> <br>
 				<lable for="avatar">Image preview:</lable><img id="preview"></img>
 		</fieldset>
 		<fieldset>
@@ -17,7 +16,8 @@
 				    <input type="text" name="name" placeholder="Your full name"required><br>
 
 				<label for="gender">Gender:</label>
-				    <input type="radio" name="gender" id="male">Male<input type="radio" name="sex">Female<br>
+				    <input type="radio" name="gender" value="male">Male
+				    <input type="radio" name="gender" value="female">Female<br>
 
 				<label for="age">Age:</label>
 				    <input type="number" name="age" required><br>
@@ -28,37 +28,38 @@
 				<label for="color">Favorite color:</label>
 				    <input type="color" name="color"><br>
 
-				<label for="country">Which country:<select>
-					<option>No Selection</option><br>
-					<option>USA</option><br>
-					<option>China</option><br>
-					<option>Franch</option><br>
-					<option>Japan</option><br>
-					<option>Silicon Vally</option><br>
+				<lable for="country">Which country:
+				<select name="country">
+					<option value="No Selection">No Selection</option><br>
+					<option value="USA">USA</option><br>
+					<option value="China">China</option><br>
+					<option value="French">French</option><br>
+					<option value="Japan">Japan</option><br>
+					<option value="Korea">Korea</option><br>
 				</select>
 
 		</fieldset>
 		<fieldset>
 			<legend>Your Indicators</legend>
-				<label for="avatar">Height: <span>Short</span>    
-				    <input type="range" min="0" max="100" name=""><span>Tall</span><br>
-				<label for="avatar">Salary: <span>Poor</span>    
-				    <input type="range" min="0" max="100"><span>Rich</span>
+				<label for="height">Height: <span>Short</span>    
+				    <input type="range" min="0" max="100" name="height"><span>Tall</span><br>
+				<label for="salary">Salary: <span>Poor</span>    
+				    <input type="range" min="0" max="100" name="salary"><span>Rich</span>
 		</fieldset>
 		<fieldset>
 			<legend>Your Contact Information</legend>
 				<label for="email">Email:    
 					<input type="email" name="email" required><br>
-				<label for="phone">Mobile:    
-					<input type="tel" name="phone"><br>
-				<label for="address">Address:<textarea></textarea><br>
+				<label for="mobile">Mobile:    
+					<input type="tel" name="mobile"><br>
+				<label for="address">Address:<textarea name="address"></textarea><br>
 				<label for="contact">Method to contact you:    
-					<input type="checkbox" name="contact">Email</input> 
-				    <input type="checkbox">Whatsapp</input> 
-				    <input type="checkbox">In app chat</input>
+					<input type="checkbox" name="contact" value="Email">Email</input> 
+				    <input type="checkbox" name="contact" value="Whatsapp">Whatsapp</input> 
+				    <input type="checkbox" name="contact" value="In app chat">In app chat</input>
 		</fieldset>	
 		<br>
-		<input type="submit">
+		<input type="submit" value="Submit">
 	</form>
 </body>
 </html>
