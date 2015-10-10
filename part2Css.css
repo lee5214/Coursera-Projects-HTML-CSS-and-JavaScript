@@ -1,0 +1,22 @@
+fieldset {
+  background-color: lightyellow;
+  border: 10px solid yellow;
+  margin-bottom: 10px;
+  width: 720px; }
+  fieldset lable {
+    width: 180px;
+    display: inline-block;
+    text-align: right;
+    text-align: top; }
+    fieldset lable checkbox {
+      width: auto; }
+    fieldset lable radio {
+      width: auto; }
+  fieldset #height {
+    text-align: center;
+    background-color: red; }
+  fieldset textarea {
+    width: 360px;
+    height: 50px; }
+
+/*# sourceMappingURL=part2Css.css.map */
