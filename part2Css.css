@@ -3,18 +3,27 @@ fieldset {
   border: 10px solid yellow;
   margin-bottom: 10px;
   width: 720px; }
-  fieldset lable {
+  fieldset label:hover, fieldset input:hover {
+    color: red;
+    font-size: 40px; }
+  fieldset label {
     width: 180px;
     display: inline-block;
     text-align: right;
-    text-align: top; }
-    fieldset lable checkbox {
-      width: auto; }
-    fieldset lable radio {
-      width: auto; }
-  fieldset #height {
-    text-align: center;
-    background-color: red; }
+    vertical-align: top; }
+  fieldset .indi {
+    display: inline-block;
+    width: 30px;
+    color: white;
+    font-size: 10px;
+    border: 10px;
+    padding: 7px; }
+  fieldset .low {
+    background-color: brown; }
+  fieldset .high {
+    background-color: purple; }
+  fieldset input[type="checkbox"], fieldset input[type="radio"] {
+    width: auto; }
   fieldset textarea {
     width: 360px;
     height: 50px; }
